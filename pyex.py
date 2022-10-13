@@ -33,7 +33,7 @@ with st.sidebar:
            icons=["house", "three-dots", "bar-chart-steps", "hash"]
 
         )
-sdata = pd.read_csv('/Users/adityaranjan/Desktop/G8A//Instagram_data.csv',encoding='mac_roman')
+sdata = pd.read_csv('Instagram_data.csv',encoding='mac_roman')
 def interactive_plot(dataframe):
         x_axis = st.selectbox('select x-axis', options=sdata.columns)
         y_axis = st.selectbox('select y-axis', options=sdata.columns)
